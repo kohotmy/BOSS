@@ -53,7 +53,7 @@ def chk():
   print("\x1b[1;97m [\033[1;91m•\x1b[1;97m]\033[1;93m  YOUR ID : "+id) 
   
   try: 
-    httpCaht = requests.get('https://raw.githubusercontent.com/kohotmy/BOSS/refs/heads/main/Approve.txt').text 
+    httpCaht = requests.get('https://github.com/kohotmy/BOSS/blob/main/Approve.txt').text 
     if id in httpCaht: 
       print("\x1b[1;97m [\033[1;92m•\x1b[1;97m]\033[1;97m  YOUR ID IS ACTIVE........\033[97m") 
       msg = str(os.geteuid()) 
